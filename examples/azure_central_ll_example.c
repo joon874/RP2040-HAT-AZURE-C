@@ -116,7 +116,7 @@ static int deviceMethodCallback(const char* method_name, const unsigned char* pa
 
     if (strcmp("LEDON", method_name) == 0) {
         
-        printf("\nReceived device powerReset request.\n");
+        printf("\nReceived LEDON command from Azure IoT Central\n");
 
         const char deviceMethodResponse[] = "{ \"Response\": \"LEDON\" }";
         *response_size = sizeof(deviceMethodResponse)-1;
@@ -130,7 +130,7 @@ static int deviceMethodCallback(const char* method_name, const unsigned char* pa
     }
     else if (strcmp("LEDOFF", method_name) == 0)
     {
-        printf("\nReceived device powerReset request.\n");
+        printf("\nReceived LEDOFF command from Azure IoT Central\n");
 
         const char deviceMethodResponse[] = "{ \"Response\": \"LEDOFF\" }";
         *response_size = sizeof(deviceMethodResponse)-1;
@@ -143,7 +143,7 @@ static int deviceMethodCallback(const char* method_name, const unsigned char* pa
     }
     else if (strcmp("STOP", method_name) == 0)
     {
-        printf("\nReceived device powerReset request.\n");
+        printf("\nReceived STOP command from Azure IoT Central\n");
 
         const char deviceMethodResponse[] = "{ \"Response\": \"DEVICE STOP\" }";
         *response_size = sizeof(deviceMethodResponse)-1;
