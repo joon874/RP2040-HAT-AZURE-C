@@ -1,11 +1,8 @@
 set(TARGET_NAME main)
 set(TARGET_FILES
     custom_hsm_x509.c
-    iothub_ll_c2d_sample.c
-    iothub_ll_client_x509_sample.c
-    iothub_ll_telemetry_sample.c    
+    azure_central_ll_example.c    
     ${TARGET_NAME}.c
-    prov_dev_client_ll_sample.c
     sample_certs.c
     )
 

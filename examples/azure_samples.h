@@ -1,4 +1,3 @@
-
 #ifndef _AZURE_SAMPLES_H_
 #define _AZURE_SAMPLES_H_
 
@@ -20,6 +19,9 @@ void iothub_ll_telemetry_sample(void);
 void iothub_ll_c2d_sample(void);
 void iothub_ll_client_x509_sample(void);
 void prov_dev_client_ll_sample(void);
+
+/* Add for Azure IoT Central examples */
+void azure_central_ll_example(void);
 
 #ifdef __cplusplus
 }
